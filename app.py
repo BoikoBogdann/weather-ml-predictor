@@ -237,7 +237,7 @@ if st.session_state.df_weather is not None:
             with g_col1:
                 st.plotly_chart(px.bar(st.session_state.feature_df, x="Важливість RF (%)", y="Ознака (Метеопараметр)", orientation='h', title="Важливість ознак (Random Forest)", color="Важливість RF (%)", color_continuous_scale="Viridis"), use_container_width=True)
             with g_col2:
-                st.plotly_chart(px.bar(st.session_state.feature_df, x="Лінійна кореляція з таргатом (r)", y="Ознака (Метеопараметр)", orientation='h', title="Лінійна кореляція Пірсона (r) з таргатом", color="Лінійна кореляція з таргатом (r)", color_continuous_scale="RdBu", range_color=[-1,1]), use_container_width=True)
+                st.plotly_chart(px.bar(st.session_state.feature_df, x="Лінійна кореляція з таргетом (r)", y="Ознака (Метеопараметр)", orientation='h', title="Лінійна кореляція Пірсона (r) з таргатом", color="Лінійна кореляція з таргатом (r)", color_continuous_scale="RdBu", range_color=[-1,1]), use_container_width=True)
             
             st.markdown("---")
             st.subheader("📋 Робоча історична база даних (Вхідний датасет)")
