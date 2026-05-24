@@ -152,7 +152,7 @@ def train_and_compare_models(X, y):
     feature_analysis_df = pd.DataFrame({
         "Ознака (Метеопараметр)": X.columns,
         "Важливість RF (%)": np.round(importances * 100, 2),
-        "Лінійна кореляція з таргатом (r)": np.round(correlations.values, 3)
+        "Лінійна кореляція з таргетом (r)": np.round(correlations.values, 3)
     }).sort_values(by="Важливість RF (%)", ascending=False)
     
     # --- ВИЗНАЧЕННЯ НАЙКРАЩОЇ МОДЕЛІ ТА ЇЇ ГІПЕРПАРАМЕТРІВ ---
